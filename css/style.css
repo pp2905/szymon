@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+header {
+  color: #fff;
+  background-color: #9ac1db;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 3;
+}
+header nav {
+  text-align: center;
+  height: 70px;
+  line-height: 70px;
+}
+header nav label {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+@media only screen and (max-width: 55em) {
+  header nav label {
+    display: block;
+    cursor: pointer;
+  }
+}
+header nav #toggle {
+  display: none;
+}
+@media only screen and (max-width: 55em) {
+  header nav #toggle:checked + .menu {
+    display: block;
+    position: absolute;
+    top: 70px;
+    z-index: 999;
+  }
+}
+header nav .menu {
+  font-size: 20px;
+}
+header nav .menu a {
+  clear: right;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  line-height: 70px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 55em) {
+  header nav .menu a {
+    display: block;
+    border-top: 1px solid #eaeaeb;
+    margin: 0;
+    background-color: #9ac1db;
+  }
+}
+@media (max-width: 55em) {
+  header nav .menu a:last-child {
+    border-bottom: 1px solid #eaeaeb;
+  }
+}
+@media only screen and (max-width: 55em) {
+  header nav .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+  }
+}
+h1 {
+  font-size: 35px;
+  font-weight: 700;
+}
+main .section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .section-wrapper a {
+  text-decoration: none;
+  color: white;
+}
+main #overview-section {
+  text-align: center;
+  background-color: #9ac1db;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  color: #fff;
+  height: 400px;
+}
+main #overview-section .overview-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main #overview-section .overview-wrapper .overview-section-title {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 2px;
+  font-size: 50px;
+  position: relative;
+  width: 70%;
+  padding-top: 85px;
+}
+@media (max-width: 45em) {
+  main #overview-section .overview-wrapper .overview-section-title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+main #overview-section .overview-wrapper #overview-section-image {
+  position: relative;
+  width: 30%;
+  height: 330px;
+  background-image: url(../img/overview-image.png);
+  background-repeat: no-repeat;
+}
+main #features-section {
+  width: 100%;
+  padding-top: 80px;
+}
+main #features-section .features-item {
+  width: 350px;
+  margin-bottom: 40px;
+  position: relative;
+}
+main #features-section .features-item img {
+  margin: 0 auto;
+  display: block;
+}
+main #features-section .features-item .napis {
+  position: relative;
+  top: 0px;
+  width: 90%;
+  text-align: center;
+  padding: 8px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main #features-section .features-item .napis .span-title {
+  font-size: 24px;
+  display: block;
+  font-weight: 600;
+  margin: 20px 0 15px 0;
+}
+@media (max-width: 45em) {
+  main #features-section .features-item .napis .span-title {
+    font-size: 20px;
+    margin: 5px 0 5px 0;
+    line-height: 20px;
+  }
+}
+main #features-section .features-item .napis .span-content {
+  margin: 20px 0 30px 0;
+  display: block;
+  font-weight: 500;
+}
+@media (max-width: 45em) {
+  main #features-section .features-item .napis .span-content {
+    margin: 20px 0 15px 0;
+    font-size: 12px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+main #features-section .features-item .napis a {
+  font-size: 17px;
+  color: #9ac1db;
+  font-weight: 700;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+@media (max-width: 45em) {
+  main #features-section .features-item .napis a {
+    margin-bottom: 8px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 45em) {
+  main #features-section .features-item .napis {
+    top: -25px;
+  }
+}
+@media (max-width: 45em) {
+  main #features-section .features-item {
+    margin-bottom: 0px;
+  }
+}
+main #features-section .features-item:last-child {
+  margin-bottom: 0px;
+}
+@media (max-width: 55em) {
+  main #features-section {
+    padding-top: 20px;
+  }
+}
+main #call-me-section {
+  margin-bottom: 20px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: #5bba73;
+  color: #fff;
+}
+main .section-description {
+  width: 70%;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .section-description .description-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+main .section-description .description-content {
+  line-height: 15px;
+  margin-top: 25px;
+}
+main #offer-section {
+  width: 100%;
+  background-color: #5bba73;
+  padding: 0px 0 60px 0;
+  color: #fff;
+}
+main #offer-section .offer-item {
+  width: 250px;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  -webkit-box-shadow: 0px 0px 5px -2px #000;
+  box-shadow: 0px 0px 5px -2px #000;
+  margin-bottom: 40px;
+}
+main #offer-section .offer-item .title-offer {
+  display: block;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 600;
+  position: relative;
+  margin: 20px 0 15px 0;
+}
+@media (max-width: 45em) {
+  main #offer-section .offer-item .title-offer {
+    font-size: 20px;
+    margin: 25px 0 5px 0;
+    line-height: 20px;
+  }
+}
+@media (max-width: 55em) {
+  main #offer-section {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+}
+main #why-us-section {
+  width: 100%;
+}
+main #why-us-section #why-us-wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+main #why-us-section #why-us-wrapper #ul-title {
+  font-size: 17px;
+}
+main #why-us-section #why-us-wrapper ul {
+  line-height: 30px;
+  font-size: 17px;
+}
+main #why-us-section #why-us-wrapper #why-us-desc {
+  font-size: 18px;
+  font-weight: 550;
+}
+main #why-us-section #why-us-wrapper #why-us-contact {
+  margin: 50px 0 50px 0;
+  font-size: 40px;
+  font-weight: 650;
+  display: block;
+  text-align: center;
+}
+main #offer-item-section {
+  width: 100%;
+}
+main #offer-item-section ul {
+  line-height: 30px;
+  font-size: 17px;
+}
