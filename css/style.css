@@ -6,76 +6,23 @@ body {
   font-family: "Lato", sans-serif;
 }
 header {
-  color: #fff;
   background-color: #9ac1db;
   position: fixed;
   top: 0;
+  z-index: 999;
   width: 100%;
-  height: 70px;
-  z-index: 3;
-}
-header nav {
+  float: none;
   text-align: center;
-  height: 70px;
-  line-height: 70px;
 }
-header nav label {
-  margin: 0 40px 0 0;
-  font-size: 30px;
-  line-height: 70px;
-  display: none;
-  width: 26px;
-  float: right;
+header .me-auto {
+  margin: auto !important;
 }
-@media only screen and (max-width: 55em) {
-  header nav label {
-    display: block;
-    cursor: pointer;
-  }
+header .nav-item {
+  vertical-align: middle;
 }
-header nav #toggle {
-  display: none;
-}
-@media only screen and (max-width: 55em) {
-  header nav #toggle:checked + .menu {
-    display: block;
-    position: absolute;
-    top: 70px;
-    z-index: 999;
-  }
-}
-header nav .menu {
-  font-size: 20px;
-}
-header nav .menu a {
-  clear: right;
-  text-decoration: none;
-  color: #fff;
-  margin: 0 15px;
-  line-height: 70px;
-  cursor: pointer;
-}
-@media only screen and (max-width: 55em) {
-  header nav .menu a {
-    display: block;
-    border-top: 1px solid #eaeaeb;
-    margin: 0;
-    background-color: #9ac1db;
-  }
-}
-@media (max-width: 55em) {
-  header nav .menu a:last-child {
-    border-bottom: 1px solid #eaeaeb;
-  }
-}
-@media only screen and (max-width: 55em) {
-  header nav .menu {
-    text-align: center;
-    width: 100%;
-    display: none;
-    z-index: 999;
-    cursor: pointer;
-  }
+header .dropdown-menu {
+  background-color: #cbe6f7;
+  text-align: center;
 }
 h1 {
   font-size: 35px;
@@ -127,11 +74,46 @@ main #overview-section .overview-wrapper .overview-section-title {
     line-height: 50px;
   }
 }
-main #overview-section .overview-wrapper #overview-section-image {
+main #overview-section .overview-wrapper #overview-section-index-image {
   position: relative;
   width: 30%;
   height: 330px;
-  background-image: url(../img/overview-image.png);
+  background-image: url(../img/overview-index-section-image.png);
+  background-repeat: no-repeat;
+}
+main #overview-section .overview-wrapper #overview-section-all-you-need-image {
+  position: relative;
+  width: 30%;
+  height: 330px;
+  background-image: url(../img/overview-all-you-need-section-image.png);
+  background-repeat: no-repeat;
+}
+main #overview-section .overview-wrapper #overview-fire-section-image {
+  position: relative;
+  width: 30%;
+  height: 330px;
+  background-image: url(../img/overview-fire-section-image.png);
+  background-repeat: no-repeat;
+}
+main #overview-section .overview-wrapper #overview-liquidation-section-image {
+  position: relative;
+  width: 30%;
+  height: 330px;
+  background-image: url(../img/overview-liquidation-section-image.png);
+  background-repeat: no-repeat;
+}
+main #overview-section .overview-wrapper #overview-emptying-section-image {
+  position: relative;
+  width: 30%;
+  height: 330px;
+  background-image: url(../img/overview-emptying-section-image.png);
+  background-repeat: no-repeat;
+}
+main #overview-section .overview-wrapper #overview-old-furniture-section-image {
+  position: relative;
+  width: 30%;
+  height: 330px;
+  background-image: url(../img/overview-old-furniture-section-image.png);
   background-repeat: no-repeat;
 }
 main #features-section {
@@ -215,7 +197,6 @@ main #features-section .features-item:last-child {
   }
 }
 main #call-me-section {
-  margin-bottom: 20px;
   height: 80px;
   line-height: 80px;
   font-size: 35px;
