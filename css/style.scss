@@ -22,6 +22,7 @@ header {
   width: 100%;
   float: none;
   text-align: center;
+  font-weight: 600;
 
   .me-auto {
     margin: auto !important;
@@ -29,6 +30,14 @@ header {
 
   .nav-item {
     vertical-align: middle;
+  }
+
+  .nav-item:first-child {
+    padding-right: 40px;
+
+    @media (max-width: 992px) {
+      padding-right: 0px;
+    }
   }
 
   .dropdown-menu {
@@ -57,6 +66,63 @@ main {
     }
   }
 
+  #contact-overview-section {
+    text-align: center;
+    background-color: #9ac1db;
+    padding: 20px 0 20px 0;
+    color: $white-color;
+
+    .contact-overview-wrapper {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 50px auto 20px auto;
+      padding: 20px 0 20px 0;
+      padding-bottom: 0px;
+
+      #working-hours {
+        flex-grow: 1;
+        padding-top: 20px;
+
+        ul {
+          list-style-position: inside;
+          padding-left: 0;
+
+          @media (max-width: 45em) {
+            font-size: 13px;
+          }
+        }
+
+        @media (max-width: 45em) {
+          padding-top: 0px;
+        }
+      }
+
+      .contact-section-title {
+        padding-top: 20px;
+        flex-grow: 3;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 2px;
+        position: relative;
+        width: 70%;
+
+        @media (max-width: 45em) {
+          padding-top: 0px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+
+      @media (max-width: 45em) {
+        margin: 20px auto 20px auto;
+        width: 95%;
+      }
+    }
+  }
+
   #overview-section {
     text-align: center;
     background-color: #9ac1db;
@@ -80,7 +146,6 @@ main {
         font-weight: 600;
         line-height: 70px;
         letter-spacing: 2px;
-        font-size: 50px;
         position: relative;
         width: 70%;
         padding-top: 85px;
@@ -229,25 +294,35 @@ main {
     font-weight: 600;
     background-color: $green-color;
     color: $white-color;
+    text-align: center;
+
+    @media (max-width: 550px) {
+      font-size: 30px;
+      width: 100%;
+    }
   }
 
   .section-description {
     width: 70%;
     padding-top: 20px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
 
     .description-title {
-      font-size: 25px;
+      font-size: 30px;
       font-weight: 600;
     }
 
     .description-content {
-      line-height: 15px;
       margin-top: 25px;
+      font-size: 19px;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
     }
   }
 
@@ -289,14 +364,20 @@ main {
 
   #why-us-section {
     width: 100%;
+    padding-top: 40px;
 
     #why-us-wrapper {
       width: 70%;
       margin-left: auto;
       margin-right: auto;
 
+      #why-us-title {
+        font-size: 30px;
+        font-weight: 600;
+      }
+
       #ul-title {
-        font-size: 17px;
+        font-size: 24px;
       }
 
       ul {
@@ -305,7 +386,7 @@ main {
       }
 
       #why-us-desc {
-        font-size: 18px;
+        font-size: 22px;
         font-weight: 550;
       }
 
@@ -315,6 +396,10 @@ main {
         font-weight: 650;
         display: block;
         text-align: center;
+      }
+
+      @media (max-width: 550px) {
+        width: 90%;
       }
     }
   }

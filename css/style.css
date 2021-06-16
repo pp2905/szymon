@@ -13,12 +13,21 @@ header {
   width: 100%;
   float: none;
   text-align: center;
+  font-weight: 600;
 }
 header .me-auto {
   margin: auto !important;
 }
 header .nav-item {
   vertical-align: middle;
+}
+header .nav-item:first-child {
+  padding-right: 40px;
+}
+@media (max-width: 992px) {
+  header .nav-item:first-child {
+    padding-right: 0px;
+  }
 }
 header .dropdown-menu {
   background-color: #cbe6f7;
@@ -39,6 +48,68 @@ main .section-wrapper {
 main .section-wrapper a {
   text-decoration: none;
   color: white;
+}
+main #contact-overview-section {
+  text-align: center;
+  background-color: #9ac1db;
+  padding: 20px 0 20px 0;
+  color: #fff;
+}
+main #contact-overview-section .contact-overview-wrapper {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px auto 20px auto;
+  padding: 20px 0 20px 0;
+  padding-bottom: 0px;
+}
+main #contact-overview-section .contact-overview-wrapper #working-hours {
+  flex-grow: 1;
+  padding-top: 20px;
+}
+main #contact-overview-section .contact-overview-wrapper #working-hours ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+@media (max-width: 45em) {
+  main #contact-overview-section .contact-overview-wrapper #working-hours ul {
+    font-size: 13px;
+  }
+}
+@media (max-width: 45em) {
+  main #contact-overview-section .contact-overview-wrapper #working-hours {
+    padding-top: 0px;
+  }
+}
+main
+  #contact-overview-section
+  .contact-overview-wrapper
+  .contact-section-title {
+  padding-top: 20px;
+  flex-grow: 3;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 2px;
+  position: relative;
+  width: 70%;
+}
+@media (max-width: 45em) {
+  main
+    #contact-overview-section
+    .contact-overview-wrapper
+    .contact-section-title {
+    padding-top: 0px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 45em) {
+  main #contact-overview-section .contact-overview-wrapper {
+    margin: 20px auto 20px auto;
+    width: 95%;
+  }
 }
 main #overview-section {
   text-align: center;
@@ -63,7 +134,6 @@ main #overview-section .overview-wrapper .overview-section-title {
   font-weight: 600;
   line-height: 70px;
   letter-spacing: 2px;
-  font-size: 50px;
   position: relative;
   width: 70%;
   padding-top: 85px;
@@ -203,23 +273,35 @@ main #call-me-section {
   font-weight: 600;
   background-color: #5bba73;
   color: #fff;
+  text-align: center;
+}
+@media (max-width: 550px) {
+  main #call-me-section {
+    font-size: 30px;
+    width: 100%;
+  }
 }
 main .section-description {
   width: 70%;
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 main .section-description .description-title {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 600;
 }
 main .section-description .description-content {
-  line-height: 15px;
   margin-top: 25px;
+  font-size: 19px;
+}
+@media (max-width: 550px) {
+  main .section-description {
+    width: 100%;
+  }
 }
 main #offer-section {
   width: 100%;
@@ -258,21 +340,26 @@ main #offer-section .offer-item .title-offer {
 }
 main #why-us-section {
   width: 100%;
+  padding-top: 40px;
 }
 main #why-us-section #why-us-wrapper {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
+main #why-us-section #why-us-wrapper #why-us-title {
+  font-size: 30px;
+  font-weight: 600;
+}
 main #why-us-section #why-us-wrapper #ul-title {
-  font-size: 17px;
+  font-size: 24px;
 }
 main #why-us-section #why-us-wrapper ul {
   line-height: 30px;
   font-size: 17px;
 }
 main #why-us-section #why-us-wrapper #why-us-desc {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 550;
 }
 main #why-us-section #why-us-wrapper #why-us-contact {
@@ -281,6 +368,11 @@ main #why-us-section #why-us-wrapper #why-us-contact {
   font-weight: 650;
   display: block;
   text-align: center;
+}
+@media (max-width: 550px) {
+  main #why-us-section #why-us-wrapper {
+    width: 90%;
+  }
 }
 main #offer-item-section {
   width: 100%;
