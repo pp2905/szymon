@@ -1,0 +1,15 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule profesjonalna-firma-porzadkowa index.html
+RewriteRule oproznianie-mieszkan emptying-apartments.html
+RewriteRule likwidacja-mieszkan liquidation-apartments
+RewriteRule sprzatanie-po-pozarach cleaning-fire.html
+RewriteRule wywoz-strych-mebli export-old-furnitures.html
+RewriteRule wszystko-czego-potrzebujesz all-you-need.html
+RewriteRule cennik price_list.html
+RewriteRule kontakt contact.html
