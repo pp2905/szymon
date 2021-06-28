@@ -70,6 +70,7 @@ main {
     color: $white-color;
     background-color: #9ac1db;
     padding: 20px 0 20px 0;
+    font-size: 19px;
 
     .contact-overview-wrapper {
       width: 70%;
@@ -79,6 +80,7 @@ main {
       margin: 50px auto 20px auto;
       padding: 20px 0 20px 0;
       padding-bottom: 0px;
+      font-size: 19px;
 
       .contact-section-title {
         padding-top: 20px;
@@ -99,6 +101,7 @@ main {
       @media (max-width: 45em) {
         margin: 20px auto 20px auto;
         width: 95%;
+        font-size: 16px;
       }
     }
   }
